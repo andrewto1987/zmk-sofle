@@ -52,7 +52,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Couche0 {
+        layer0 {
             bindings = <
 &kp ESC         &kp N1        &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8     &kp N9     &kp N0      &kp BACKSPACE
 &kp TAB         &kp Q         &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I      &kp O      &kp P       &kp BSLH
@@ -65,7 +65,7 @@
             display-name = "Couche0";
         };
 
-        Couche1 {
+        layer1 {
             bindings = <
 &kp GRAVE      &kp F1            &kp F2              &kp F3           &kp F4      &kp F5             &mmv MOVE_UP     &kp F6    &kp F7     &kp F8      &kp F9     &kp F10    &kp F11
 &kp BACKSPACE  &kp NUMBER_6      &kp N7              &kp N8           &kp N9      &kp N0             &mmv MOVE_DOWN   &trans    &kp PG_UP  &kp UP      &kp PG_DN  &kp PSCRN  &kp F12
@@ -78,7 +78,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        Couche2 {
+        layer2 {
             bindings = <
 &kp TILDE  &kp F1        &kp F2          &kp F3       &kp F4  &kp F5    &mmv MOVE_UP     &kp F6     &kp F7     &kp F8        &kp F9     &kp F10      &kp F11
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans       &trans  &trans    &mmv MOVE_DOWN   &trans     &kp PG_UP  &kp UP_ARROW  &kp PG_DN  &kp PSCRN    &kp F12
@@ -91,12 +91,12 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        Couche3 {
+        layer3 {
             bindings = <
 &kp K_POWER     &kp K_SLEEP      &kp K_PWR        &trans           &trans                &kp K_LOCK              &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP     &mkp RCLK        &trans                &kp PSCRN               &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans           &trans           &kp K_MUTE       &kp C_VOL_DN          &kp C_VOL_UP            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&soft_off       &trans           &trans           &kp K_MUTE       &kp C_VOL_DN          &kp C_VOL_UP            &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &tog 3                &trans                  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
