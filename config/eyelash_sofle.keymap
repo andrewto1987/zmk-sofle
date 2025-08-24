@@ -70,7 +70,7 @@
 &kp GRAVE      &kp F1            &kp F2              &kp F3           &kp F4      &kp F5             &mmv MOVE_UP     &kp F6    &kp F7     &kp F8      &kp F9     &kp F10    &kp F11
 &kp BACKSPACE  &kp NUMBER_6      &kp N7              &kp N8           &kp N9      &kp N0             &mmv MOVE_DOWN   &trans    &kp PG_UP  &kp UP      &kp PG_DN  &kp PSCRN  &kp F12
 &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp F6           &kp F10     &kp F11            &mmv MOVE_LEFT   &kp HOME  &kp LEFT   &kp DOWN    &kp RIGHT  &trans     &trans
-&kp RET        &tog 3            &kp LA(LC(DELETE))  &bt BT_CLR       &bt BT_PRV  &bt BT_NXT         &mmv MOVE_RIGHT  &kp END   &mkp MCLK  &mkp RCLK   &kp INS    &trans     &trans
+&kp RET        &tog 3            &kp LA(LC(DELETE))  &out OUT_TOG     &bt BT_PRV  &bt BT_NXT         &mmv MOVE_RIGHT  &kp END   &mkp MCLK  &mkp RCLK   &kp INS    &trans     &trans
 &kp C_MUTE     &rgb_ug RGB_BRD   &rgb_ug RGB_BRI     &rgb_ug RGB_EFF  &trans      &rgb_ug RGB_TOG    &mkp LCLK        &trans    &trans     &kp C_MENU  &trans     &trans
             >;
 
@@ -93,14 +93,24 @@
 
         layer3 {
             bindings = <
-&kp K_POWER     &kp K_SLEEP      &kp K_PWR        &trans           &trans                &kp K_LOCK              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP     &mkp RCLK        &trans                &kp PSCRN               &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&soft_off       &trans           &trans           &kp K_MUTE       &kp C_VOL_DN          &kp C_VOL_UP            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &tog 3                &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp K_POWER     &kp K_SLEEP      &kp K_PWR        &trans           &trans                &kp K_LOCK              &trans  &trans           &trans           &trans           &trans  &trans  &trans
+&msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP     &mkp RCLK        &trans                &kp PSCRN               &trans  &trans           &trans           &trans           &trans  &trans  &trans
+&msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &trans  &trans  &trans
+&soft_off       &tog 4           &bt BT_CLR       &kp K_MUTE       &kp C_VOL_DN          &kp C_VOL_UP            &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &trans  &trans  &trans
+&trans          &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &tog 3                &trans                  &trans  &trans           &trans           &trans           &trans  &trans
             >;
 
             display-name = "Couche3";
+        };
+
+        layer4 {
+            bindings = <
+&kp MINUS      &kp EQUAL   &kp F7     &kp F8         &kp F9   &kp F12          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp BACKSLASH  &kp Y       &kp U      &kp I          &kp O    &kp P            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &kp H       &kp J      &kp K          &kp L    &kp SEMICOLON    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SQT        &kp N       &kp M      &kp COMMA      &kp DOT  &kp SLASH        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &kp DELETE  &kp RCTRL  &kp RIGHT_ALT  &tog 4   &trans           &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
