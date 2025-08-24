@@ -236,7 +236,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
-  - {t: layer4, h: toggle}
+  - {t: RightKB, h: toggle}
   - $$mdi:bluetooth-off$$
   - MUTE
   - $$mdi:volume-low$$
@@ -260,7 +260,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer4:
+  RightKB:
   - {t: '-', s: _}
   - {t: '=', s: +}
   - F7
@@ -317,7 +317,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: layer4, h: toggle}
+  - {t: RightKB, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
