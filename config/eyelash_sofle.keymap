@@ -111,6 +111,8 @@
 &kp SQT        &kp N       &kp M      &kp COMMA      &kp DOT  &kp SLASH        &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &kp DELETE  &kp RCTRL  &kp RIGHT_ALT  &tog 4   &trans           &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            display-name = "RightKB";
         };
     };
 };
